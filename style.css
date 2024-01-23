@@ -1,0 +1,147 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(218, 218, 218);
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: rgb(255, 255, 255); 
+    padding: 1em;
+    text-align: center;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    padding: .3em;
+}
+h2{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.maincontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3em;
+    gap: 3em;
+}
+.addbutton{
+    border: 0;
+    padding: .6em 2em;
+    border-radius: .7em;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+.addbutton:hover{
+    background-color: gray;
+    cursor: pointer;
+}
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style for the popup content */
+.form-content {
+    background-color: #eeeeee;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.submitdiv{
+   display: flex;
+   justify-content: space-between;
+   
+}
+/* Style for the close button */
+.closebutton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+input{
+    border: 0;
+    padding: .5em;
+    border-radius: .5em;
+}
+input:focus{
+    outline: none;
+}
+.readcheck{
+    display: flex;
+    align-items: center;
+    padding-left: 2em;
+}
+.submitbutton{
+    padding: 1em 5em;
+    border: 0;
+    background-color: black;
+    border-radius: .7em;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+.bookcontainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+.bookcard {
+    display: none;
+    width: auto;
+    border: 1px solid #cacaca;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+h4{
+    color: rgb(88, 88, 88);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.btndiv{
+    display: flex;
+    gap: 1em;
+}
+.deletebutton{
+    border: 0;
+    padding: .6em 3em;
+    border-radius: 1em;
+    background-color: rgb(199, 2, 2);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    cursor: pointer;
+}
+.readbutton{
+    border: 0;
+    padding: .6em 3em;
+    border-radius: 1em;
+    background-color: rgb(48, 199, 2);
+    color: rgb(255, 255, 255);
+    font-weight: bold; 
+    cursor: pointer; 
+}
+.note{
+    color: rgb(252, 54, 54);
+}
+.deletebutton:hover{
+    background-color: rgb(245, 99, 99);
+}

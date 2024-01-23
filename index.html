@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrimeWare Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="primewarelogo.png" alt="logo" class="logo">
+        <h2>Library</h2>
+    </header>
+    <div class="maincontainer">
+        <button class="addbutton">add+</button>
+        <div class="bookcontainer"></div>
+    </div>
+    <div class="popup-container">
+        <div class="form-content">
+            <span class="closebutton">&times;</span>
+            <!-- Your forum content goes here -->
+            <div class="form">
+                <h2>Add new book</h2>
+
+                <div>
+                <input type="text" placeholder="Title" class="title">
+                <input type="text"placeholder="Author" class="author">
+                <input type="number"placeholder="Pages" class="pages">
+                </div>
+
+                <div class="submitdiv">
+                <div class="readcheck">
+                    <label for="checkbox">Have you read it?</label>
+                    <input type="checkbox" id="checkbox" class="checkbox">
+                </div>
+                <button class="submitbutton">Submit</button>
+                </div>
+                <p class="note"></p>
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
